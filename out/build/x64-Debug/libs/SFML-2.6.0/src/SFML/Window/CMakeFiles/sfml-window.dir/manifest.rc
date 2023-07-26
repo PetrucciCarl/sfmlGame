@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+2 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/nickobelic1999/CLionProjects/sfmlGame/out/build/x64-Debug/libs/SFML-2.6.0/src/SFML/Window/CMakeFiles/sfml-window.dir/embed.manifest"

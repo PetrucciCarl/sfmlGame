@@ -1,0 +1,3 @@
+C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CMakeFiles/sfmlGame.dir
+C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

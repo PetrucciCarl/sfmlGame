@@ -1,0 +1,66 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sfml_add_library"
+		],
+		"files" : 
+		[
+			"libs/SFML-2.6.0/cmake/Macros.cmake",
+			"libs/SFML-2.6.0/src/SFML/Graphics/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 202,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "devel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libs/SFML-2.6.0/lib/sfml-graphics-d.lib"
+			],
+			"targetId" : "sfml-graphics::@39ebd5d06bcd42e58aa6",
+			"targetIndex" : 1,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "bin",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"libs/SFML-2.6.0/lib/sfml-graphics-d-2.dll"
+			],
+			"targetId" : "sfml-graphics::@39ebd5d06bcd42e58aa6",
+			"targetIndex" : 1,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libs/SFML-2.6.0/src/SFML/Graphics",
+		"source" : "libs/SFML-2.6.0/src/SFML/Graphics"
+	}
+}

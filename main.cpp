@@ -3,22 +3,12 @@
 //
 
 #include <iostream>
-
-#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-    sf::Window window;
-
-    window.create(sf::VideoMode(800, 600), "My window");
-   
-    sf::Event event;
-
-    while (window.isOpen())
-    {
-        if (event.type == sf::Event::Closed)
-            window.close();
-    }
-
+    sf::RenderWindow window( sf::VideoMode( 800, 800 ), "Snake", sf::Style::Close );
+    game::MainMenu menu;
+    menu.start(&window);
     return 0;
 }

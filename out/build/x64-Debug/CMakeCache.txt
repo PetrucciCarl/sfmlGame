@@ -24,8 +24,8 @@ CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Too
 //Choose the type of build (Debug or Release)
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc
@@ -49,7 +49,7 @@ CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.l
 CMAKE_C_COMPILER:STRING=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3
+CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1
@@ -175,6 +175,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=sfmlGame
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.0.1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe
@@ -385,6 +400,24 @@ sfml-system_LIB_DEPENDS:STATIC=general;winmm;
 sfml-window_LIB_DEPENDS:STATIC=general;sfml-system;general;winmm;general;gdi32;
 
 //Value Computed by CMake
+sfmlEngine_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/out/build/x64-Debug/Engine
+
+//Value Computed by CMake
+sfmlEngine_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sfmlEngine_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/Engine
+
+//Value Computed by CMake
+sfmlEntities_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/out/build/x64-Debug/Entities
+
+//Value Computed by CMake
+sfmlEntities_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sfmlEntities_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/Entities
+
+//Value Computed by CMake
 sfmlGame_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/out/build/x64-Debug
 
 //Value Computed by CMake
@@ -516,7 +549,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

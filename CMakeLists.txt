@@ -4,13 +4,24 @@ set(PROJECT_NAME sfmlGame)
 
 project(${PROJECT_NAME} VERSION 0.0.1 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(libs/SFML-2.6.0)
+set(SOURCE_FILES    Food.cpp
+                    Game.cpp
+                    GameMenu.cpp
+                    MainMenu.cpp
+                    Snake.cpp)
 
-add_subdirectory(UI)
-add_subdirectory(CoreGame)
+set(HEADER_FILES    Engine.hpp
+                    Food.hpp
+                    Game.hpp
+                    GameMenu.hpp
+                    MainMenu.hpp
+                    Snake.hpp)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_subdirectory(libs/SFML-2.5.1)
+include_directories(libs/SFML-2.5.1/include)
 
-target_link_libraries(${PROJECT_NAME} sfml-graphics sfml-system sfml-window CoreGame UI)
+add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} sfml-graphics)

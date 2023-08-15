@@ -2,13 +2,15 @@
 // Created by nickobelic1999 on 12/07/2023.
 //
 
-#include <iostream>
 #include <SFML/Graphics.hpp>
+#include "MainMenu.hpp"
+
 
 int main()
 {
-    sf::RenderWindow window( sf::VideoMode( 800, 800 ), "Snake", sf::Style::Close );
-    game::MainMenu menu;
+    std::string title = "Snake";
+    sf::RenderWindow window(sf::VideoMode(800, 800), title, sf::Style::Close);
+    UI::MainMenu menu;
     menu.start(&window);
     return 0;
 }

@@ -115,56 +115,8 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sf
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
 
-//User executables (bin)
-CMAKE_INSTALL_BINDIR:PATH=bin
-
-//Read-only architecture-independent data (DATAROOTDIR)
-CMAKE_INSTALL_DATADIR:PATH=
-
-//Read-only architecture-independent data root (share)
-CMAKE_INSTALL_DATAROOTDIR:PATH=share
-
-//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
-CMAKE_INSTALL_DOCDIR:PATH=
-
-//C header files (include)
-CMAKE_INSTALL_INCLUDEDIR:PATH=include
-
-//Info documentation (DATAROOTDIR/info)
-CMAKE_INSTALL_INFODIR:PATH=
-
-//Object code libraries (lib)
-CMAKE_INSTALL_LIBDIR:PATH=lib
-
-//Program executables (libexec)
-CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
-
-//Locale-dependent data (DATAROOTDIR/locale)
-CMAKE_INSTALL_LOCALEDIR:PATH=
-
-//Modifiable single-machine data (var)
-CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
-
-//Man documentation (DATAROOTDIR/man)
-CMAKE_INSTALL_MANDIR:PATH=
-
-//C header files for non-gcc (/usr/include)
-CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
-
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/sfmlGame
-
-//Run-time variable data (LOCALSTATEDIR/run)
-CMAKE_INSTALL_RUNSTATEDIR:PATH=
-
-//System admin executables (sbin)
-CMAKE_INSTALL_SBINDIR:PATH=sbin
-
-//Modifiable architecture-independent data (com)
-CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
-
-//Read-only single-machine data (etc)
-CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Users/nickobelic1999/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/mingw/bin/ld.exe
@@ -200,6 +152,9 @@ CMAKE_OBJCOPY:FILEPATH=C:/Users/nickobelic1999/AppData/Local/JetBrains/Toolbox/a
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=C:/Users/nickobelic1999/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/mingw/bin/objdump.exe
+
+//macOS architecture to build; 64-bit is expected
+CMAKE_OSX_ARCHITECTURES:STRING=x86_64
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -305,30 +260,6 @@ CMAKE_STRIP:FILEPATH=C:/Users/nickobelic1999/AppData/Local/JetBrains/Toolbox/app
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Enable to build 7-Zip packages
-CPACK_BINARY_7Z:BOOL=OFF
-
-//Enable to build IFW packages
-CPACK_BINARY_IFW:BOOL=OFF
-
-//Enable to build NSIS packages
-CPACK_BINARY_NSIS:BOOL=ON
-
-//Enable to build NuGet packages
-CPACK_BINARY_NUGET:BOOL=OFF
-
-//Enable to build WiX packages
-CPACK_BINARY_WIX:BOOL=OFF
-
-//Enable to build ZIP packages
-CPACK_BINARY_ZIP:BOOL=OFF
-
-//Enable to build 7-Zip source packages
-CPACK_SOURCE_7Z:BOOL=ON
-
-//Enable to build ZIP source packages
-CPACK_SOURCE_ZIP:BOOL=ON
-
 //Value Computed by CMake
 CoreGame_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CoreGame
 
@@ -342,31 +273,43 @@ CoreGame_LIB_DEPENDS:STATIC=general;sfml-graphics;
 CoreGame_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/CoreGame
 
 //Path to a file.
-FLAC_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers
+FLAC_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-FLAC_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libFLAC.a
+FLAC_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libFLAC.a
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers/freetype2
+FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers/freetype2
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers/freetype2
+FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers/freetype2
 
 //Path to a library.
-FREETYPE_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libfreetype.a
+FREETYPE_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libfreetype.a
+
+//Value Computed by CMake
+GameMenu_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/GameMenu
+
+//Value Computed by CMake
+GameMenu_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+GameMenu_LIB_DEPENDS:STATIC=general;sfml-graphics;
+
+//Value Computed by CMake
+GameMenu_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/GameMenu
 
 //Path to a file.
-OGG_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers
+OGG_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-OGG_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libogg.a
+OGG_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libogg.a
 
 //Path to a file.
-OPENAL_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers/AL
+OPENAL_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers/AL
 
 //Path to a library.
-OPENAL_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libopenal32.a
+OPENAL_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libopenal32.a
 
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
@@ -375,7 +318,7 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 OPENGL_glu_LIBRARY:STRING=glu32
 
 //Value Computed by CMake
-SFML_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.6.0
+SFML_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.5.1
 
 //TRUE to build SFML's Audio module.
 SFML_BUILD_AUDIO:BOOL=TRUE
@@ -392,12 +335,13 @@ SFML_BUILD_GRAPHICS:BOOL=TRUE
 //TRUE to build SFML's Network module.
 SFML_BUILD_NETWORK:BOOL=TRUE
 
-//TRUE to build the SFML test suite, FALSE to ignore it
-SFML_BUILD_TEST_SUITE:BOOL=FALSE
-
 //TRUE to build SFML's Window module. This setting is ignored,
 // if the graphics module is built.
 SFML_BUILD_WINDOW:BOOL=TRUE
+
+//External libraries (FLAC, Freetype, Vorbis, ...) installation
+// directory
+SFML_DEPENDENCIES_INSTALL_PREFIX:PATH=.
 
 //TRUE to automatically install pkg-config files so other projects
 // can find SFML
@@ -406,12 +350,15 @@ SFML_INSTALL_PKGCONFIG_FILES:BOOL=FALSE
 //Value Computed by CMake
 SFML_IS_TOP_LEVEL:STATIC=OFF
 
+//Prefix installation path for miscellaneous files
+SFML_MISC_INSTALL_PREFIX:PATH=.
+
 //TRUE to use an OpenGL ES implementation, FALSE to use a desktop
 // OpenGL implementation
 SFML_OPENGL_ES:BOOL=0
 
 //Value Computed by CMake
-SFML_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0
+SFML_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1
 
 //TRUE to statically link to the standard libraries, FALSE to use
 // them as DLLs
@@ -427,25 +374,22 @@ UI_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-
 UI_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-UI_LIB_DEPENDS:STATIC=general;sfml-graphics;
+UI_LIB_DEPENDS:STATIC=general;sfml-graphics;general;CoreGame;general;GameMenu;
 
 //Value Computed by CMake
 UI_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/UI
 
 //Path to a library.
-VORBISENC_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbisenc.a
+VORBISENC_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbisenc.a
 
 //Path to a library.
-VORBISFILE_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbisfile.a
+VORBISFILE_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbisfile.a
 
 //Path to a file.
-VORBIS_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers
+VORBIS_INCLUDE_DIR:PATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-VORBIS_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbis.a
-
-//Treat compiler warnings as errors
-WARNINGS_AS_ERRORS:BOOL=ON
+VORBIS_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbis.a
 
 //Dependencies for the target
 sfml-audio_LIB_DEPENDS:STATIC=general;sfml-system;
@@ -463,36 +407,6 @@ sfml-system_LIB_DEPENDS:STATIC=general;winmm;
 sfml-window_LIB_DEPENDS:STATIC=general;sfml-system;general;winmm;general;gdi32;
 
 //Value Computed by CMake
-sfmlEngine_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/Engine
-
-//Value Computed by CMake
-sfmlEngine_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-sfmlEngine_LIB_DEPENDS:STATIC=general;sfml-graphics;
-
-//Value Computed by CMake
-sfmlEngine_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/Engine
-
-//Value Computed by CMake
-sfmlEntities_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/Entities
-
-//Value Computed by CMake
-sfmlEntities_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-sfmlEntities_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/Entities
-
-//Value Computed by CMake
-sfmlGameObjects_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/GameObjects
-
-//Value Computed by CMake
-sfmlGameObjects_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-sfmlGameObjects_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/GameObjects
-
-//Value Computed by CMake
 sfmlGame_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug
 
 //Value Computed by CMake
@@ -500,15 +414,6 @@ sfmlGame_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 sfmlGame_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame
-
-//Value Computed by CMake
-sfmlObjects_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/GameObjects
-
-//Value Computed by CMake
-sfmlObjects_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-sfmlObjects_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/GameObjects
 
 
 ########################
@@ -598,38 +503,6 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/nickobelic1999/CLionProjects/sfmlGame
-//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
-CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
-CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
-CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
-CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
-CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
-CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
-CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
-CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
-CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
-CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
-CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
-CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
-CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
-CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
-CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
-CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -645,7 +518,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -699,32 +572,16 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_7Z
-CPACK_BINARY_7Z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_IFW
-CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NSIS
-CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NUGET
-CPACK_BINARY_NUGET-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_WIX
-CPACK_BINARY_WIX-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_ZIP
-CPACK_BINARY_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_7Z
-CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_ZIP
-CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Have include dinput.h
 DINPUT_H_FOUND:INTERNAL=1
 //Details about finding FLAC
-FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libFLAC.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libFLAC.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers][v()]
 //Details about finding OpenAL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libopenal32.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers/AL][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libopenal32.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers/AL][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding VORBIS
-FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/libs-mingw/x64/libogg.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/extlibs/headers][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/libs-mingw/x64/libogg.a][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers][C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.5.1/extlibs/headers][v()]
 //ADVANCED property for variable: FLAC_INCLUDE_DIR
 FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FLAC_LIBRARY
@@ -767,6 +624,4 @@ VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 VORBIS_LIBRARY-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-//CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/sfmlGame
 

@@ -7,6 +7,9 @@
 #include "Snake.hpp"
 #include "Food.hpp"
 
+#include <iostream>
+#include <nlohmann/json.hpp>
+
 namespace CoreGame
 {
     /*
@@ -18,15 +21,17 @@ namespace CoreGame
     */
 
 
-    const std::string MenuStrings[5] = {
-            "Game Over!",
-            "Do you wish to continue?",
-            "Yes",
-            "No",
-            "Exit"
+    const std::string MenuStrings[5] =
+    {
+        "Game Over!",
+        "Do you wish to continue?",
+        "Yes",
+        "No",
+        "Exit"
     }; //menu strings
 
-    enum MenuText {
+    enum MenuText
+    {
         GameOver,
         Continue,
         Yes,
@@ -43,10 +48,10 @@ namespace CoreGame
 
         void start();
 
-        sf::Font* getFont(Fonts font);
+        __attribute__((unused)) sf::Font* getFont(Fonts font);
 
 
-        GameController(sf::RenderWindow* w);
+        explicit GameController(sf::RenderWindow* w);
 
     private:
 
@@ -62,12 +67,13 @@ namespace CoreGame
         //load resources
         void loadResources();
 
-        Snake snake;
-        sf::RenderWindow* screen;
-        sf::Font fontList[3];
+        float                   scale;
+        int                     score;
+        bool                    loopInvarient;
 
-        float scale;
-        int score;
+        Snake                   snake;
+        sf::RenderWindow*       screen;
+        sf::Font                fontList[3];
 
     };
 

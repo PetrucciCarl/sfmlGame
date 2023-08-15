@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.5.1/cmake_install.cmake")
+  include("C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/cmake_install.cmake")
 
 endif()
 

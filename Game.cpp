@@ -6,8 +6,9 @@
 
 CoreGame::GameController::GameController(sf::RenderWindow *w) : snake(w)
 {
-    screen = w;
-    score = 0;
+    screen          = w;
+    score           = 0;
+    loopInvarient   = true;
 }
 
 void CoreGame::GameController::start()
@@ -18,7 +19,7 @@ void CoreGame::GameController::start()
 
 void CoreGame::GameController::gameLoop()
 {
-    bool loopInvarient = true;
+
     sf::Vector2<int> direction(-1,0);
     scale = 5;
     Food *food = new Food(screen,snake.getNextFoodLocation());
@@ -54,8 +55,9 @@ void CoreGame::GameController::gameLoop()
         } //event loop
         snake.moveSnake(direction);
         if (snake.died()) {
-            //game over
-            loopInvarient = false;
+            //game Over
+            gameOver();
+
         }
         if (snake.ateFood(food)) {
             score++;
@@ -71,6 +73,12 @@ void CoreGame::GameController::setupScene()
 {
     screen->clear();
     snake.drawSnake();
+}
+
+void CoreGame::GameController::gameOver()
+{
+
+    loopInvarient = false;
 }
 
 bool CoreGame::checkCollision(const sf::RectangleShape& a, const sf::RectangleShape& b)
@@ -94,7 +102,7 @@ void CoreGame::GameController::loadResources()
     //TODO
 }
 
-sf::Font* CoreGame::GameController::getFont(Fonts font)
+__attribute__((unused)) sf::Font* CoreGame::GameController::getFont(Fonts font)
 {
     return &fontList[font];
 }

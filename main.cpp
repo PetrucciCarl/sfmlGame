@@ -9,7 +9,7 @@
 int main()
 {
     std::string title = "Snake";
-    sf::RenderWindow window(sf::VideoMode(800, 800), title, sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(800, 600), title, sf::Style::Close);
     UI::MainMenu menu;
     menu.start(&window);
     return 0;

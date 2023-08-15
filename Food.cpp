@@ -6,10 +6,10 @@
 
 CoreGame::Food::Food(sf::RenderWindow *w, sf::Vector2f loc)
 {
-    location = loc;
-    screen = w;
-    color = sf::Color::Red;
-    food = getRectangleAt(location, color);
+    location    = loc;
+    screen      = w;
+    color       = sf::Color::Red;
+    food        = getRectangleAt(location, color);
 
 }
 
@@ -17,8 +17,6 @@ sf::RectangleShape CoreGame::Food::getFood()
 {
     return food;
 }
-
-
 
 void CoreGame::Food::drawFood()
 {

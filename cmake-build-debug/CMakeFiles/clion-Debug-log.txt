@@ -10,6 +10,7 @@ Call Stack (most recent call first):
   libs/SFML-2.5.1/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+-- Using the multi-header code from C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/json-3.11.2/include/
 -- Configuring done (0.2s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug

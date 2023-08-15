@@ -9,11 +9,12 @@
 
 namespace UI
 {
-    void MainMenu::start( sf::RenderWindow * w ) {
+    void MainMenu::start(sf::RenderWindow * w)
+    {
         sf::Font defaultFont;
         defaultFont.loadFromFile("sansation.ttf");
         gmenu::Style style( defaultFont, defaultFont);
-        gmenu::Menu menu( *w, "ButtsMcGee", {}, style );
+        gmenu::Menu menu( *w, "", {}, style );
         action[0] = new StartGameAction( w );
         action[3] = new ExitAction( w );
         std::vector<gmenu::MenuItem> items;
@@ -22,16 +23,18 @@ namespace UI
         }
         items[3].action.reset(action[3]);
         menu.setMenuItems( items );
-        menu.setTitle( "Sfml-Snake" );
+        menu.setTitle("SFML Snake");
         menu.createMenu();
     }
 
 
-    StartGameAction::StartGameAction( sf::RenderWindow *w ) {
+    StartGameAction::StartGameAction(sf::RenderWindow *w)
+    {
         window = w;
     }
 
-    bool StartGameAction::start() {
+    bool StartGameAction::start()
+    {
         CoreGame::GameController gameController( window );
         gameController.start();
         return true;
@@ -39,15 +42,18 @@ namespace UI
 
 
 
-    HighScoreAction::HighScoreAction( sf::RenderWindow *w ) {
+    HighScoreAction::HighScoreAction(sf::RenderWindow *w)
+    {
         window = w;
     }
 
-    bool HighScoreAction::start() {
+    bool HighScoreAction::start()
+    {
         return false;
     }
 
-    OptionsAction::OptionsAction( sf::RenderWindow *w ) {
+    OptionsAction::OptionsAction(sf::RenderWindow *w)
+    {
         window = w;
     }
 
@@ -69,10 +75,10 @@ namespace UI
         bool confirm = false;
         gmenu::MenuItem items[2]; //Creating a list of Menu Items for the Dialog
         items[0].title = "Yes";
-//        items[0].action = new ExitAction::ConfirmationMenuAction( &confirm );
+        items[0].action = static_cast<const std::shared_ptr<Action>>(new ExitAction::ConfirmationMenuAction(&confirm));
         items[1].title = "No";
-//        items[1].action = new ExitAction::DeclineMenuAction( &confirm );
-//        gmenu::Menu dialog( window, "Are you sure?", items, 2 ); //Creating the confirmation dialog
+        items[1].action = static_cast<const std::shared_ptr<Action>>(new ExitAction::DeclineMenuAction(&confirm));
+//        gmenu::Menu dialog(window, "Are you sure?", items, 2 ); //Creating the confirmation dialog
 //        dialog.createMenu();
         return confirm;
     }

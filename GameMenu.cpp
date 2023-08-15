@@ -18,7 +18,8 @@ namespace gmenu {
 		menuTitle = title;
 	}
 
-	void Menu::setMenuItems( std::vector<MenuItem> items ) {
+	void Menu::setMenuItems( std::vector<MenuItem> items )
+    {
 		menuItems = items;
 	}
 

@@ -12,7 +12,7 @@
 #include "Engine.hpp"
 #include "Food.hpp"
 
-#define BOX_SIZE 20
+#define BOX_SIZE 32
 
 namespace CoreGame
 {
@@ -40,13 +40,15 @@ namespace CoreGame
         It is represented as a Vector of sf::RectangleShape objects.
         */
     public:
-        Snake(sf::RenderWindow *);
+
         void drawSnake();
         bool died();
         bool ateFood(CoreGame::Food *fd);
         void moveSnake(sf::Vector2<int> direction);
 
         sf::Vector2f getNextFoodLocation();
+
+        Snake(sf::RenderWindow *);
 
     private:
         sf::RenderWindow *screen;

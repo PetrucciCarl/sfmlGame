@@ -5,11 +5,13 @@
 #include "SFML/Graphics.hpp"
 #include <memory>
 
-namespace gmenu {
+namespace gmenu
+{
 
 	
 	/* Simple abstract class interface to implement Actions */
-	class Action {
+	class Action
+    {
 	public:
 		/* The function that will be called by the menu
 		Depending on the return value of start() the menu will close
@@ -64,20 +66,19 @@ namespace gmenu {
 		int layout = Layout::Default;
 		Style(sf::Font &mf, sf::Font &itmf):
 			TitleFont( mf ), ItemFont( itmf ), PaddingTitle {10,0}, PaddingItems {0,0}
-		{	
-		}
+		{}
 	};
 
 
 	
 	
-	class Menu {
-		/* Generic Menu - can be instantiated to generate a custom menu as needed over a sf::RenderWindow */
-
+	class Menu
+    {
+	/* Generic Menu - can be instantiated to generate a custom menu as needed over a sf::RenderWindow */
 	public:
 		
 		/* Only available constructor */
-		Menu(sf::RenderWindow &wnd, std::string title, std::vector<MenuItem> items, Style &st):
+		Menu(sf::RenderWindow &wnd, std::string title, std::vector<MenuItem> items, Style &st) :
 		    style( st ), window (wnd) {
 			menuTitle = title;
 			menuItems = items;
@@ -85,20 +86,20 @@ namespace gmenu {
                 exit(0);
             MenuTitleFont.loadFromFile("sansation.ttf");
 		}
-//        Menu(sf::RenderWindow &wnd):
-//            window (wnd){
-//            //window = wnd;
-//            //TODO
-//            if (!MenuItemFont.loadFromFile("sansation.ttf"))
-//                exit(0);
-//            MenuTitleFont.loadFromFile("sansation.ttf");
-//        }
+        Menu(sf::RenderWindow &wnd, Style &st):
+            style( st ),window (wnd){
+            //TODO
+            if (!MenuItemFont.loadFromFile("sansation.ttf"))
+                exit(0);
+            MenuTitleFont.loadFromFile("sansation.ttf");
+        }
 
 //        Menu(sf::RenderWindow *window, std::string title) : Menu(window) {
 //            setTitle(title);
 //        }
 
-//        Menu(sf::RenderWindow *window, std::string title, MenuItem* items, int8_t length) : Menu(window, title) {
+//        Menu(sf::RenderWindow *window, std::string title, MenuItem* items, int8_t length) : Menu(window, title)
+//        {
 //            setMenuItems(items, length);
 //        }
 	    /* This method is will start the menu and handover the screen control to it.
@@ -111,6 +112,7 @@ namespace gmenu {
 
 		/* In case menu items needs to be changed */
 		void setMenuItems(std::vector<MenuItem>);
+        void setMenuItems(MenuItem *, int8_t);
 		
 		/* In case the title needs to be changed */
 		void setTitle(std::string title);
@@ -133,10 +135,12 @@ namespace gmenu {
 
 		std::vector<MenuItem> menuItems;
 
-		struct coordinates {
+		struct coordinates
+        {
 			float x = 0;
 			float y = 0;
 		}  title_location;
+
 		std::vector<coordinates> item_location;
 
 		/*==================================================*

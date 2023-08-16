@@ -1,0 +1,24 @@
+# ninja log v5
+64	700	7138547123428244	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj	842a1154ac4399e3
+41	712	7138547123740719	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj	66b37c8d2aea677c
+53	719	7138547123428244	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj	e633bbf49d99a1f7
+704	976	7138547126565804	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj	5353471d4f4544d2
+47	1109	7138547127511337	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj	f7a9d7be166d22c7
+720	1118	7138547128140371	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj	36b406ea964379dd
+59	1345	7138547129859635	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj	b890ea2468363588
+713	1364	7138547130176128	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj	46ac74c8d23e873a
+83	1374	7138547130488751	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj	508f5ce9fc21f77a
+76	1510	7138547130957534	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj	6ca1d50e8a3073be
+36	1630	7138547132997080	CMakeFiles/sfmlGame.dir/main.cpp.obj	f49beb21e3f9fcf4
+70	1651	7138547133313748	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj	b10be6b09b2e77fb
+19	1843	7138547135196890	CMakeFiles/sfmlGame.dir/GameMenu.cpp.obj	30a73d3dcb44c69b
+1632	1893	7138547135665753	libs/SFML-2.5.1/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.obj	bca58ce1d297b032
+31	1899	7138547135665753	CMakeFiles/sfmlGame.dir/Snake.cpp.obj	c612f6738bfb9a5f
+10	1944	7138547136294901	CMakeFiles/sfmlGame.dir/Food.cpp.obj	c6ae9f452aa17849
+976	2242	7138547139281350	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj	20588b2409dd5482
+1119	2315	7138547140097680	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj	1df11017d1a29117
+1109	2322	7138547140097680	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj	fc27ecd0c5d313a7
+1374	2402	7138547141004163	libs/SFML-2.5.1/src/SFML/Main/CMakeFiles/sfml-main.dir/MainWin32.cpp.obj	28229b9c627d200f
+1365	2416	7138547141099247	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj	29114e64bb5f08cd
+1510	2502	7138547141945713	libs/SFML-2.5.1/src/SFML/Window/CMakeFiles/sfml-window.dir/Clipboard.cpp.obj	ecf4be34de60349
+1346	2797	7138547144923183	libs/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj	4d0a34dcf400ba88

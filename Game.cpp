@@ -61,6 +61,7 @@ void CoreGame::GameController::gameLoop()
         }
         if (snake.ateFood(food)) {
             score++;
+            snake.updateSpeed(0.1);
             delete food;
             food = new Food(screen, snake.getNextFoodLocation());
         }

@@ -8,7 +8,7 @@ CoreGame::Snake::Snake(sf::RenderWindow *w)
 {
     colorBody       = sf::Color::Green;
     colorHead       = sf::Color::Yellow;
-    movementScale   = 5;
+    movementScale   = 3;
     screen          = w;
 
     snake_length    = 1;
@@ -59,6 +59,11 @@ bool CoreGame::Snake::ateFood(CoreGame::Food *fd)
         return true;
     }
     return false;
+}
+
+void CoreGame::Snake::updateSpeed(float speed)
+{
+    movementScale += speed;
 }
 
 void CoreGame::Snake::moveSnake(sf::Vector2<int> direction)

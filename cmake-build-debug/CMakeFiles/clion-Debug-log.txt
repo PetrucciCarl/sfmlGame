@@ -11,6 +11,6 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Using the multi-header code from C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/json-3.11.2/include/
--- Configuring done (0.2s)
--- Generating done (0.1s)
+-- Configuring done (0.4s)
+-- Generating done (0.2s)
 -- Build files have been written to: C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug

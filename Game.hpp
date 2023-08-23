@@ -8,6 +8,7 @@
 #include "Food.hpp"
 
 #include <iostream>
+#include <fstream>
 #include <nlohmann/json.hpp>
 
 namespace CoreGame
@@ -48,7 +49,7 @@ namespace CoreGame
 
         void start();
 
-        __attribute__((unused)) sf::Font* getFont(Fonts font);
+        sf::Font* getFont(Fonts font);
 
 
         explicit GameController(sf::RenderWindow* w);
@@ -60,6 +61,9 @@ namespace CoreGame
 
         //Setup scene
         void setupScene();
+
+        // Method to write a new score to the score file.
+        void submitScore(const std::string& file);
 
         // Game over
         void gameOver();
@@ -74,6 +78,8 @@ namespace CoreGame
         Snake                   snake;
         sf::RenderWindow*       screen;
         sf::Font                fontList[3];
+
+        std::fstream            highscores;
 
     };
 

@@ -54,14 +54,29 @@ void CoreGame::GameController::gameLoop()
             }
         } //event loop
         snake.moveSnake(direction);
-        if (snake.died()) {
+        if (snake.died())
+        {
             //game Over
+
+            // This is where score needs to be saved
+            // 1 - Ask for username.
+            // 2 - Check username in json file.
+            // 3 - Check score.
+            // 4 - If score is greater than current score update score.
+            // 5 - Order file from highest to lowest.
+            // 6 - Write new file backout.
+            submitScore("test.txt");
+
             gameOver();
 
         }
-        if (snake.ateFood(food)) {
+        if (snake.ateFood(food))
+        {
+            // Updates score.
             score++;
+            // Increases speed once food has been eaten.
             snake.updateSpeed(0.1);
+            // Removes food from screen and creates new food.
             delete food;
             food = new Food(screen, snake.getNextFoodLocation());
         }
@@ -74,6 +89,25 @@ void CoreGame::GameController::setupScene()
 {
     screen->clear();
     snake.drawSnake();
+}
+
+void CoreGame::GameController::submitScore(const std::string& file)
+{
+    highscores.open(file, std::ios::out);
+
+    if (!highscores)
+    {
+        std::cerr << "Unable to create highscores file!\n";
+    }
+    else
+    {
+        std::cout << "Created highscores file\n";
+
+        highscores << "This is a test";
+
+        highscores.close();
+    }
+
 }
 
 void CoreGame::GameController::gameOver()
@@ -103,7 +137,7 @@ void CoreGame::GameController::loadResources()
     //TODO
 }
 
-__attribute__((unused)) sf::Font* CoreGame::GameController::getFont(Fonts font)
+sf::Font* CoreGame::GameController::getFont(Fonts font)
 {
     return &fontList[font];
 }

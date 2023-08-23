@@ -11,6 +11,8 @@
 #include <fstream>
 #include <nlohmann/json.hpp>
 
+using json = nlohmann::json;
+
 namespace CoreGame
 {
     /*
@@ -62,6 +64,9 @@ namespace CoreGame
         //Setup scene
         void setupScene();
 
+        // Read in file of old scores
+        void readScores(const std::string& file);
+
         // Method to write a new score to the score file.
         void submitScore(const std::string& file);
 
@@ -72,6 +77,7 @@ namespace CoreGame
         void loadResources();
 
         float                   scale;
+        std::string             name;
         int                     score;
         bool                    loopInvarient;
 
@@ -80,6 +86,8 @@ namespace CoreGame
         sf::Font                fontList[3];
 
         std::fstream            highscores;
+        json                    scoresList;
+
 
     };
 

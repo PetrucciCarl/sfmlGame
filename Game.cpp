@@ -59,6 +59,8 @@ void CoreGame::GameController::gameLoop()
             //game Over
 
             // This is where score needs to be saved
+            // 0 - Read in old file
+
             // 1 - Ask for username.
             // 2 - Check username in json file.
             // 3 - Check score.
@@ -91,20 +93,44 @@ void CoreGame::GameController::setupScene()
     snake.drawSnake();
 }
 
-void CoreGame::GameController::submitScore(const std::string& file)
+void CoreGame::GameController::readScores(const std::string &file)
 {
-    highscores.open(file, std::ios::out);
+    // Open file before checking if open
+    highscores.open(file, std::ios::in);
 
+    // Check file is actually open
     if (!highscores)
     {
         std::cerr << "Unable to create highscores file!\n";
     }
     else
     {
+        
+    }
+
+}
+
+void CoreGame::GameController::submitScore(const std::string& file)
+{
+    // Open file before checking if open
+    highscores.open(file, std::ios::out);
+
+    // Check file is actually open
+    if (!highscores)
+    {
+        std::cerr << "Unable to create highscores file!\n";
+    }
+    else
+    {
+        // This is a debug line tells user file was created
         std::cout << "Created highscores file\n";
 
-        highscores << "This is a test";
+        // Initialises json file
+        scoresList = {{name}, {score}};
+        // Outputs json to file
+        highscores << scoresList;
 
+        // Closes file
         highscores.close();
     }
 

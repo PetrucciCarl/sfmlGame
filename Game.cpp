@@ -59,15 +59,16 @@ void CoreGame::GameController::gameLoop()
             //game Over
 
             // This is where score needs to be saved
-            // 0 - Read in old file
-
+            // 0 - Read in scores file
+            readScores("HighScores.txt");
             // 1 - Ask for username.
             // 2 - Check username in json file.
             // 3 - Check score.
             // 4 - If score is greater than current score update score.
             // 5 - Order file from highest to lowest.
             // 6 - Write new file backout.
-            submitScore("test.txt");
+            submitScore("HighScores.txt");
+
 
             gameOver();
 
@@ -93,47 +94,38 @@ void CoreGame::GameController::setupScene()
     snake.drawSnake();
 }
 
-void CoreGame::GameController::readScores(const std::string &file)
+void CoreGame::GameController::readScores(const std::string& file)
 {
-    // Open file before checking if open
-    highscores.open(file, std::ios::in);
+    std::ifstream highscores(file);
 
-    // Check file is actually open
-    if (!highscores)
+    if(!highscores)
     {
-        std::cerr << "Unable to create highscores file!\n";
+        // HighScores.txt doesn't exists
+        std::cout << "No such files exists, created scores file!\n";
+
+        // Initialises json file
+        scoresList = {{name}, {score}};
     }
     else
     {
-        
+        // Parse the file
+        std::cout << "Parsing scores file!\n";
+        scoresList = json::parse(std::ifstream(file));
+        scoresList += {{name}, {score}};
+        std::cout << std::setw(4) << scoresList.dump() << "\n\n";
     }
+
+}
+
+void CoreGame::GameController::sortScores(/* Possible parameters */)
+{
 
 }
 
 void CoreGame::GameController::submitScore(const std::string& file)
 {
-    // Open file before checking if open
-    highscores.open(file, std::ios::out);
-
-    // Check file is actually open
-    if (!highscores)
-    {
-        std::cerr << "Unable to create highscores file!\n";
-    }
-    else
-    {
-        // This is a debug line tells user file was created
-        std::cout << "Created highscores file\n";
-
-        // Initialises json file
-        scoresList = {{name}, {score}};
-        // Outputs json to file
-        highscores << scoresList;
-
-        // Closes file
-        highscores.close();
-    }
-
+    std::ofstream highscores(file, std::ios::trunc);
+    highscores << scoresList.dump();
 }
 
 void CoreGame::GameController::gameOver()

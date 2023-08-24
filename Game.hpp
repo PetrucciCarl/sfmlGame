@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 #include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
@@ -64,8 +65,11 @@ namespace CoreGame
         //Setup scene
         void setupScene();
 
-        // Read in file of old scores
+        // Read scores in
         void readScores(const std::string& file);
+
+        // Sort scores
+        void sortScores(/* Possible parameters */);
 
         // Method to write a new score to the score file.
         void submitScore(const std::string& file);
@@ -84,8 +88,6 @@ namespace CoreGame
         Snake                   snake;
         sf::RenderWindow*       screen;
         sf::Font                fontList[3];
-
-        std::fstream            highscores;
         json                    scoresList;
 
 

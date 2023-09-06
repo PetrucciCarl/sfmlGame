@@ -55,7 +55,7 @@ namespace CoreGame
         sf::Font* getFont(Fonts font);
 
 
-        explicit GameController(sf::RenderWindow* w);
+        explicit GameController(sf::RenderWindow *w, const std::string &filename);
 
     private:
 
@@ -66,13 +66,13 @@ namespace CoreGame
         void setupScene();
 
         // Read scores in
-        void readScores(const std::string& file);
+        void readScores();
 
         // Sort scores
-        void sortScores(/* Possible parameters */);
+        void sortScores();
 
         // Method to write a new score to the score file.
-        void submitScore(const std::string& file);
+        void submitScore();
 
         // Game over
         void gameOver();
@@ -89,6 +89,8 @@ namespace CoreGame
         sf::RenderWindow*       screen;
         sf::Font                fontList[3];
         json                    scoresList;
+
+        const std::string&      filename;
 
 
     };

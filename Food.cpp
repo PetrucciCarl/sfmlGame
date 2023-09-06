@@ -8,7 +8,7 @@ CoreGame::Food::Food(sf::RenderWindow *w, sf::Vector2f loc)
 {
     location    = loc;
     screen      = w;
-    color       = sf::Color::Red;
+    color       = sf::Color::Blue;
     food        = getRectangleAt(location, color);
 
 }

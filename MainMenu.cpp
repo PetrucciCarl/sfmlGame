@@ -35,7 +35,7 @@ namespace UI
 
     bool StartGameAction::start()
     {
-        CoreGame::GameController gameController( window );
+        CoreGame::GameController gameController(window, "HighScores.txt");
         gameController.start();
         return true;
     }

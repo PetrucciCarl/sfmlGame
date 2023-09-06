@@ -4,8 +4,8 @@
 
 #include "Game.hpp"
 
-CoreGame::GameController::GameController(sf::RenderWindow *w) : snake(w)
-{
+CoreGame::GameController::GameController(sf::RenderWindow *w, const std::string &filename)
+    : snake(w), filename(filename) {
     screen          = w;
     score           = 0;
     loopInvarient   = true;
@@ -60,15 +60,17 @@ void CoreGame::GameController::gameLoop()
 
             // This is where score needs to be saved
             // 0 - Read in scores file
-            readScores("HighScores.txt");
+            readScores();
+
             // 1 - Ask for username.
             // 2 - Check username in json file.
-            // 3 - Check score.
-            // 4 - If score is greater than current score update score.
-            // 5 - Order file from highest to lowest.
-            // 6 - Write new file backout.
-            submitScore("HighScores.txt");
 
+            // 3 - Check score, if score is greater than current score update score.
+            // 4 - Order file from highest to lowest.
+            sortScores();
+
+            // 5 - Write new file backout.
+            submitScore();
 
             gameOver();
 
@@ -94,14 +96,16 @@ void CoreGame::GameController::setupScene()
     snake.drawSnake();
 }
 
-void CoreGame::GameController::readScores(const std::string& file)
+void CoreGame::GameController::readScores()
 {
-    std::ifstream highscores(file);
+    //File input stream
+    std::ifstream highscores(filename);
 
+    // Check for file and verify it was created.
     if(!highscores)
     {
         // HighScores.txt doesn't exists
-        std::cout << "No such files exists, created scores file!\n";
+        std::cerr << "No such files exists, created scores file!\n";
 
         // Initialises json file
         scoresList = {{name}, {score}};
@@ -109,23 +113,46 @@ void CoreGame::GameController::readScores(const std::string& file)
     else
     {
         // Parse the file
-        std::cout << "Parsing scores file!\n";
-        scoresList = json::parse(std::ifstream(file));
+        std::cout << "Parsing scores file...\n";
+        scoresList = json::parse(std::ifstream(filename));
+        // Append new scores to parsed json file
         scoresList += {{name}, {score}};
-        std::cout << std::setw(4) << scoresList.dump() << "\n\n";
+        /* Dump to the console, ensure that formatting is correct
+           This should only be used for debugging
+           */
+        std::cout << std::setw(2) << scoresList.dump() << "\n\n";
     }
 
 }
 
-void CoreGame::GameController::sortScores(/* Possible parameters */)
+void CoreGame::GameController::sortScores()
 {
+
+    // Creates new iterator
+    for(const auto& i : scoresList)
+    {
+        if(i >= score)
+        {
+            std::find(scoresList.begin(), scoresList.end(), i >= score);
+            scoresList.emplace_back(score);
+        }
+        else if (i <= score)
+        {
+            std::find(scoresList.begin(), scoresList.end(), i <= score);
+            scoresList.emplace_back(score);
+        }
+
+    }
 
 }
 
-void CoreGame::GameController::submitScore(const std::string& file)
+void CoreGame::GameController::submitScore()
 {
-    std::ofstream highscores(file, std::ios::trunc);
+    //Create highscores file output stream
+    std::ofstream highscores(filename, std::ios::out | std::ios::trunc);
+    // Dump scores list to output file stream
     highscores << scoresList.dump();
+    highscores.close();
 }
 
 void CoreGame::GameController::gameOver()

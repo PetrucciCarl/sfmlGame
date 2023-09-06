@@ -128,21 +128,11 @@ void CoreGame::GameController::readScores()
 void CoreGame::GameController::sortScores()
 {
 
-    // Creates new iterator
-    for(const auto& i : scoresList)
-    {
-        if(i >= score)
-        {
-            std::find(scoresList.begin(), scoresList.end(), i >= score);
-            scoresList.emplace_back(score);
-        }
-        else if (i <= score)
-        {
-            std::find(scoresList.begin(), scoresList.end(), i <= score);
-            scoresList.emplace_back(score);
-        }
-
-    }
+    std::sort(scoresList.begin(), scoresList.end(),
+              [this](const json& a, const json& b)
+                    {
+                        return a[score] < b[score];
+                    });
 
 }
 

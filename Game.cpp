@@ -6,9 +6,11 @@
 
 CoreGame::GameController::GameController(sf::RenderWindow *w, const std::string &filename)
     : snake(w), filename(filename) {
+    scale           = 5;
     screen          = w;
     score           = 0;
     loopInvarient   = true;
+
 }
 
 void CoreGame::GameController::start()
@@ -21,13 +23,12 @@ void CoreGame::GameController::gameLoop()
 {
 
     sf::Vector2<int> direction(-1,0);
-    scale = 5;
     Food *food = new Food(screen,snake.getNextFoodLocation());
     while(loopInvarient)
     {
         setupScene();
         food->drawFood();
-        sf::Event event;
+        sf::Event event{};
         while(screen->pollEvent(event))
         {
             if (event.type == sf::Event::KeyReleased)
@@ -56,22 +57,21 @@ void CoreGame::GameController::gameLoop()
         snake.moveSnake(direction);
         if (snake.died())
         {
-            //game Over
-
-            // This is where score needs to be saved
+            // Before we die, we need too:
             // 0 - Read in scores file
             readScores();
 
+            scoresList.emplace_back(name, score);
             // 1 - Ask for username.
             // 2 - Check username in json file.
-
             // 3 - Check score, if score is greater than current score update score.
             // 4 - Order file from highest to lowest.
             sortScores();
 
             // 5 - Write new file backout.
-            submitScore();
+            writeScores();
 
+            //game Over
             gameOver();
 
         }
@@ -98,29 +98,26 @@ void CoreGame::GameController::setupScene()
 
 void CoreGame::GameController::readScores()
 {
-    //File input stream
-    std::ifstream highscores(filename);
+    auto highscores = std::ifstream(filename, std::ios::in);
 
     // Check for file and verify it was created.
-    if(!highscores)
-    {
-        // HighScores.txt doesn't exists
-        std::cerr << "No such files exists, created scores file!\n";
-
-        // Initialises json file
-        scoresList = {{name}, {score}};
-    }
-    else
+    if(highscores)
     {
         // Parse the file
         std::cout << "Parsing scores file...\n";
-        scoresList = json::parse(std::ifstream(filename));
-        // Append new scores to parsed json file
-        scoresList += {{name}, {score}};
-        /* Dump to the console, ensure that formatting is correct
-           This should only be used for debugging
-           */
-        std::cout << std::setw(2) << scoresList.dump() << "\n\n";
+
+        std::string line;
+
+        while(std::getline(highscores, line))
+        {
+            auto scoreName = line.substr(0, line.find(','));
+            auto scoreScore = line.substr(line.find(',')+1);
+            scoresList.emplace_back(scoreName, std::stoi(scoreScore));
+        }
+    }
+    else
+    {
+        std::cerr << "On death, unable to create HighScores.txt!" << std::endl;
     }
 
 }
@@ -129,19 +126,24 @@ void CoreGame::GameController::sortScores()
 {
 
     std::sort(scoresList.begin(), scoresList.end(),
-              [this](const json& a, const json& b)
+              [](const std::pair<std::string, int>& a, const std::pair<std::string, int>& b)
                     {
-                        return a[score] < b[score];
+                        return a.second < b.second;
                     });
+
 
 }
 
-void CoreGame::GameController::submitScore()
+void CoreGame::GameController::writeScores()
 {
-    //Create highscores file output stream
-    std::ofstream highscores(filename, std::ios::out | std::ios::trunc);
     // Dump scores list to output file stream
-    highscores << scoresList.dump();
+    std::string scores;
+
+    for(const auto& i : scoresList)
+        scores += i.first + "," + std::to_string(i.second) + "\n";
+
+    auto highscores = std::ofstream(filename, std::ios::trunc);
+    highscores << scores;
     highscores.close();
 }
 

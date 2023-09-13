@@ -10,9 +10,6 @@
 #include <iostream>
 #include <fstream>
 #include <filesystem>
-#include <nlohmann/json.hpp>
-
-using json = nlohmann::json;
 
 namespace CoreGame
 {
@@ -72,7 +69,7 @@ namespace CoreGame
         void sortScores();
 
         // Method to write a new score to the score file.
-        void submitScore();
+        void writeScores();
 
         // Game over
         void gameOver();
@@ -80,19 +77,17 @@ namespace CoreGame
         //load resources
         void loadResources();
 
-        float                   scale;
-        std::string             name;
-        int                     score;
-        bool                    loopInvarient;
+        float                                                   scale;
+        std::string                                             name;
+        int                                                     score;
+        bool                                                    loopInvarient;
 
-        Snake                   snake;
-        sf::RenderWindow*       screen;
-        sf::Font                fontList[3];
-        json                    scoresList;
+        Snake                                                   snake;
+        sf::RenderWindow*                                       screen;
+        sf::Font                                                fontList[3];
+        std::vector<std::pair<std::string, int>>                scoresList;
 
-        const std::string&      filename;
-
-
+        const std::string&                                      filename;
     };
 
 }

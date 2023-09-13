@@ -6,6 +6,7 @@
 
 #include "GameMenu.hpp"
 #include <iostream>
+#include <utility>
 
 namespace gmenu {
 
@@ -15,12 +16,12 @@ namespace gmenu {
 	*===================================================*/
 
 	void Menu::setTitle(std::string title) {
-		menuTitle = title;
+		menuTitle = std::move(title);
 	}
 
 	void Menu::setMenuItems( std::vector<MenuItem> items )
     {
-		menuItems = items;
+		menuItems = std::move(items);
 	}
 
 
@@ -33,7 +34,7 @@ namespace gmenu {
 		bool cont = true;
 		while (window.isOpen() && cont)
 		{	
-			sf::Event event;
+			sf::Event event{};
 			while (window.pollEvent(event))
             {
 				if (event.type == sf::Event::Closed)

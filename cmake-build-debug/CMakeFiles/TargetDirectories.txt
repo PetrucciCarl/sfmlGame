@@ -77,11 +77,3 @@ C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.6.0
 C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.6.0/src/SFML/Audio/CMakeFiles/install.dir
 C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.6.0/src/SFML/Audio/CMakeFiles/install/local.dir
 C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/SFML-2.6.0/src/SFML/Audio/CMakeFiles/install/strip.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/package.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/package_source.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/edit_cache.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/rebuild_cache.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/list_install_components.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/install.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/install/local.dir
-C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2/CMakeFiles/install/strip.dir

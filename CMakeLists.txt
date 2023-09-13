@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 set(PROJECT_NAME sfmlGame)
 
-project(${PROJECT_NAME} VERSION 0.0.1 LANGUAGES CXX)
+project(${PROJECT_NAME} VERSION 0.0.2 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -21,6 +21,12 @@ set(HEADER_FILES    Engine.hpp
 
 add_subdirectory(libs/SFML-2.6.0)
 include_directories(libs/SFML-2.6.0/include)
+
+add_subdirectory(libs/json-3.11.2)
+include_directories(libs/json-3.11.2/include)
+
+add_subdirectory(libs/glm-0.9.9.8)
+include_directories(libs/glm-0.9.9.8/glm)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES} main.cpp)
 

@@ -4,6 +4,7 @@
 /*--- Headers ---*/
 #include "SFML/Graphics.hpp"
 #include <memory>
+#include <utility>
 
 namespace gmenu
 {
@@ -80,8 +81,8 @@ namespace gmenu
 		/* Only available constructor */
 		Menu(sf::RenderWindow &wnd, std::string title, std::vector<MenuItem> items, Style &st) :
 		    style( st ), window (wnd) {
-			menuTitle = title;
-			menuItems = items;
+			menuTitle = std::move(title);
+			menuItems = std::move(items);
             if (!MenuItemFont.loadFromFile("sansation.ttf"))
                 exit(0);
             MenuTitleFont.loadFromFile("sansation.ttf");
@@ -112,7 +113,6 @@ namespace gmenu
 
 		/* In case menu items needs to be changed */
 		void setMenuItems(std::vector<MenuItem>);
-        void setMenuItems(MenuItem *, int8_t);
 		
 		/* In case the title needs to be changed */
 		void setTitle(std::string title);

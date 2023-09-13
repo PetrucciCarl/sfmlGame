@@ -52,42 +52,42 @@ build cmake_object_order_depends_target_sfmlGame: phony || cmake_object_order_de
 build CMakeFiles/sfmlGame.dir/Food.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/Food.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\Food.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
 build CMakeFiles/sfmlGame.dir/Game.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/Game.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\Game.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
 build CMakeFiles/sfmlGame.dir/GameMenu.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/GameMenu.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\GameMenu.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
 build CMakeFiles/sfmlGame.dir/MainMenu.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/MainMenu.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\MainMenu.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
 build CMakeFiles/sfmlGame.dir/Snake.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/Snake.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\Snake.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
 build CMakeFiles/sfmlGame.dir/main.cpp.obj: CXX_COMPILER__sfmlGame_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/main.cpp || cmake_object_order_depends_target_sfmlGame
   DEP_FILE = CMakeFiles\sfmlGame.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm
   OBJECT_DIR = CMakeFiles\sfmlGame.dir
   OBJECT_FILE_DIR = CMakeFiles\sfmlGame.dir
 
@@ -1982,7 +1982,235 @@ build libs/SFML-2.6.0/src/SFML/Audio/CMakeFiles/install/strip.util: CUSTOM_COMMA
 build libs/SFML-2.6.0/src/SFML/Audio/install/strip: phony libs/SFML-2.6.0/src/SFML/Audio/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/sfmlGame/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for package
+
+build libs/glm-0.9.9.8/CMakeFiles/package.util: CUSTOM_COMMAND libs/glm-0.9.9.8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/package: phony libs/glm-0.9.9.8/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build libs/glm-0.9.9.8/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/package_source: phony libs/glm-0.9.9.8/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/glm-0.9.9.8/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8 && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/glm-0.9.9.8/edit_cache: phony libs/glm-0.9.9.8/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/glm-0.9.9.8/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8 && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\sfmlGame -BC:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/rebuild_cache: phony libs/glm-0.9.9.8/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/glm-0.9.9.8/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/glm-0.9.9.8/CMakeFiles/install.util: CUSTOM_COMMAND libs/glm-0.9.9.8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8 && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/install: phony libs/glm-0.9.9.8/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/glm-0.9.9.8/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/glm-0.9.9.8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8 && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/install/local: phony libs/glm-0.9.9.8/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/glm-0.9.9.8/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/glm-0.9.9.8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8 && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/install/strip: phony libs/glm-0.9.9.8/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target glm_shared
+
+
+#############################################
+# Order-only phony target for glm_shared
+
+build cmake_object_order_depends_target_glm_shared: phony || libs/glm-0.9.9.8/glm/CMakeFiles/glm_shared.dir
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/glm_shared.dir/detail/glm.cpp.obj: CXX_COMPILER__glm_shared_unscanned_Debug C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm/detail/glm.cpp || cmake_object_order_depends_target_glm_shared
+  DEFINES = -Dglm_shared_EXPORTS
+  DEP_FILE = libs\glm-0.9.9.8\glm\CMakeFiles\glm_shared.dir\detail\glm.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/include -IC:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm/..
+  OBJECT_DIR = libs\glm-0.9.9.8\glm\CMakeFiles\glm_shared.dir
+  OBJECT_FILE_DIR = libs\glm-0.9.9.8\glm\CMakeFiles\glm_shared.dir\detail
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target glm_shared
+
+
+#############################################
+# Link the shared library libs\glm-0.9.9.8\glm\libglm_shared.dll
+
+build libs/glm-0.9.9.8/glm/libglm_shared.dll libs/glm-0.9.9.8/glm/libglm_shared.dll.a: CXX_SHARED_LIBRARY_LINKER__glm_shared_Debug libs/glm-0.9.9.8/glm/CMakeFiles/glm_shared.dir/detail/glm.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = libs\glm-0.9.9.8\glm\CMakeFiles\glm_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = libs\glm-0.9.9.8\glm\libglm_shared.dll
+  TARGET_IMPLIB = libs\glm-0.9.9.8\glm\libglm_shared.dll.a
+  TARGET_PDB = glm_shared.dll.dbg
+
+
+#############################################
+# Utility command for package
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/package.util: CUSTOM_COMMAND libs/glm-0.9.9.8/glm/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/package: phony libs/glm-0.9.9.8/glm/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/package_source: phony libs/glm-0.9.9.8/glm/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8\glm && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/edit_cache: phony libs/glm-0.9.9.8/glm/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8\glm && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\sfmlGame -BC:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/rebuild_cache: phony libs/glm-0.9.9.8/glm/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/glm-0.9.9.8/glm/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/install.util: CUSTOM_COMMAND libs/glm-0.9.9.8/glm/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8\glm && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/install: phony libs/glm-0.9.9.8/glm/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/glm-0.9.9.8/glm/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8\glm && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/install/local: phony libs/glm-0.9.9.8/glm/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/glm-0.9.9.8/glm/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/glm-0.9.9.8/glm/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\sfmlGame\cmake-build-debug\libs\glm-0.9.9.8\glm && C:\Users\nickobelic1999\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/glm-0.9.9.8/glm/install/strip: phony libs/glm-0.9.9.8/glm/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
+
+build glm_shared: phony libs/glm-0.9.9.8/glm/libglm_shared.dll
+
+build libglm_shared.dll: phony libs/glm-0.9.9.8/glm/libglm_shared.dll
 
 build libsfml-main-d.a: phony libs/SFML-2.6.0/lib/libsfml-main-d.a
 
@@ -2018,7 +2246,7 @@ build sfmlGame: phony sfmlGame.exe
 #############################################
 # Folder: C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug
 
-build all: phony sfmlGame.exe libs/SFML-2.6.0/all
+build all: phony sfmlGame.exe libs/SFML-2.6.0/all libs/glm-0.9.9.8/all
 
 # =============================================================================
 
@@ -2077,20 +2305,34 @@ build libs/SFML-2.6.0/src/SFML/System/all: phony libs/SFML-2.6.0/lib/sfml-system
 build libs/SFML-2.6.0/src/SFML/Window/all: phony libs/SFML-2.6.0/lib/sfml-window-d-2.dll
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/glm-0.9.9.8
+
+build libs/glm-0.9.9.8/all: phony libs/glm-0.9.9.8/glm/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/glm-0.9.9.8/glm
+
+build libs/glm-0.9.9.8/glm/all: phony libs/glm-0.9.9.8/glm/libglm_shared.dll
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseArguments.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPack.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPackComponent.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenAL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Templates/CPackConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerOptionsOverride.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerWarnings.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Config.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Macros.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFLAC.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFreetype.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindVORBIS.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfigDependencies.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Audio/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Graphics/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Main/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Network/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/System/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Window/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/tools/windows/resource.rc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseArguments.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPack.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPackComponent.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenAL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Templates/CPackConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerOptionsOverride.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerWarnings.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Config.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Macros.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFLAC.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFreetype.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindVORBIS.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfigDependencies.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Audio/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Graphics/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Main/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Network/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/System/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Window/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/tools/windows/resource.rc.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseArguments.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPack.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPackComponent.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenAL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Templates/CPackConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerOptionsOverride.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerWarnings.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Config.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Macros.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFLAC.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFreetype.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindVORBIS.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfigDependencies.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Audio/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Graphics/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Main/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Network/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/System/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Window/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/tools/windows/resource.rc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseArguments.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPack.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CPackComponent.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenAL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/nickobelic1999/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Templates/CPackConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerOptionsOverride.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/CompilerWarnings.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Config.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Macros.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFLAC.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindFreetype.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/Modules/FindVORBIS.cmake C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfig.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/cmake/SFMLConfigDependencies.cmake.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Audio/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Graphics/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Main/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Network/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/System/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/src/SFML/Window/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML-2.6.0/tools/windows/resource.rc.in C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/CMakeLists.txt C$:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8/glm/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

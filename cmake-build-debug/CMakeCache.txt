@@ -464,6 +464,15 @@ VORBIS_LIBRARY:FILEPATH=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/SFML
 WARNINGS_AS_ERRORS:BOOL=ON
 
 //Value Computed by CMake
+glm_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/glm-0.9.9.8
+
+//Value Computed by CMake
+glm_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/libs/glm-0.9.9.8
+
+//Value Computed by CMake
 nlohmann_json_BINARY_DIR:STATIC=C:/Users/nickobelic1999/CLionProjects/sfmlGame/cmake-build-debug/libs/json-3.11.2
 
 //Value Computed by CMake
@@ -631,7 +640,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

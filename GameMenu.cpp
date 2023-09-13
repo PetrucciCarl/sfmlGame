@@ -8,7 +8,8 @@
 #include <iostream>
 #include <utility>
 
-namespace gmenu {
+namespace gmenu
+{
 
 
 	/*==================================================*
@@ -23,7 +24,6 @@ namespace gmenu {
     {
 		menuItems = std::move(items);
 	}
-
 
 	/* 
 	This function constains the main event loop for the menu
@@ -110,7 +110,7 @@ namespace gmenu {
 		}
 
 		unsigned int menu_screen_height = (int)window.getSize().y  -  title_location.y + style.PaddingItems.top ;
-		std::cout << "Screen hieght" << menu_screen_height << std::endl;
+		std::cout << "Screen height" << menu_screen_height << std::endl;
 		unsigned int block_height = (int)menu_screen_height/menuItems.size() * style.MenuItemScaleFactor;
 		
 		float offset_coefficient = 0.5;
@@ -148,6 +148,8 @@ namespace gmenu {
 			color = style.ItemColor;
 		}
 
-	} //drawMenu()
+	}
+
+    //drawMenu()
 
 } // namespace sui

@@ -19,8 +19,8 @@ set(HEADER_FILES    Engine.hpp
                     MainMenu.hpp
                     Snake.hpp)
 
-add_subdirectory(libs/SFML-2.6.0)
-include_directories(libs/SFML-2.6.0/include)
+add_subdirectory(libs/SFML-2.5.1)
+include_directories(libs/SFML-2.5.1/include)
 
 add_subdirectory(libs/json-3.11.2)
 include_directories(libs/json-3.11.2/include)

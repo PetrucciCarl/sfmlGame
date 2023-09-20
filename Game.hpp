@@ -52,7 +52,7 @@ namespace CoreGame
         sf::Font* getFont(Fonts font);
 
 
-        explicit GameController(sf::RenderWindow *w, const std::string &filename);
+        explicit GameController(sf::RenderWindow *w);
 
     private:
 
@@ -87,7 +87,6 @@ namespace CoreGame
         sf::Font                                                fontList[3];
         std::vector<std::pair<std::string, int>>                scoresList;
 
-        const std::string&                                      filename;
     };
 
 }

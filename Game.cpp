@@ -4,8 +4,8 @@
 
 #include "Game.hpp"
 
-CoreGame::GameController::GameController(sf::RenderWindow *w, const std::string &filename)
-    : snake(w), filename(filename) {
+CoreGame::GameController::GameController(sf::RenderWindow *w)
+    : snake(w) {
     scale           = 5;
     screen          = w;
     score           = 0;
@@ -31,7 +31,7 @@ void CoreGame::GameController::gameLoop()
         sf::Event event{};
         while(screen->pollEvent(event))
         {
-            if (event.type == sf::Event::KeyReleased)
+            if (event.type == sf::Event::KeyPressed)
             {
                 if(event.key.code == sf::Keyboard::Up)
                 {
@@ -98,7 +98,7 @@ void CoreGame::GameController::setupScene()
 
 void CoreGame::GameController::readScores()
 {
-    auto highscores = std::ifstream(filename, std::ios::in);
+    auto highscores = std::ifstream("C:\\Users\\pet00\\Downloads\\HighScores.txt", std::ios::in);
 
     // Check for file and verify it was created.
     if(highscores)
@@ -142,7 +142,7 @@ void CoreGame::GameController::writeScores()
     for(const auto& i : scoresList)
         scores += i.first + "," + std::to_string(i.second) + "\n";
 
-    auto highscores = std::ofstream(filename, std::ios::trunc);
+    auto highscores = std::ofstream("C:\\Users\\pet00\\Downloads\\HighScores.txt", std::ios::trunc);
     highscores << scores;
     highscores.close();
 }
